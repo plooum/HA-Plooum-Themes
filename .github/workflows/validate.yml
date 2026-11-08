@@ -1,0 +1,42 @@
+name: Validate
+
+on:
+  push:
+  pull_request:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  hacs:
+    name: HACS validation
+    runs-on: ubuntu-latest
+    steps:
+      - uses: hacs/action@main
+        with:
+          category: theme
+          ignore: brands
+
+  themes:
+    name: Theme file
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Exactly one theme file, valid YAML, every theme with its variables
+        run: |
+          python3 - <<'PY'
+          import glob, sys, yaml
+          files = glob.glob("themes/*.yaml")
+          if len(files) != 1:
+              sys.exit(f"themes/ must hold exactly one .yaml file (HACS manages one), found {files}")
+          data = yaml.safe_load(open(files[0]))
+          if not isinstance(data, dict) or not data:
+              sys.exit("the theme file declares no theme")
+          for name, theme in data.items():
+              if not isinstance(theme, dict) or not theme:
+                  sys.exit(f"theme {name!r} is empty")
+              variables = theme.get("modes", {}).get("dark") or theme.get("modes", {}).get("light") or theme
+              if "primary-color" not in variables:
+                  sys.exit(f"theme {name!r} has no primary-color")
+              print(f"ok: {name}")
+          PY
