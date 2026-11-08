@@ -12,11 +12,29 @@ Home Assistant themes made to go with the [HA Plooum Cards](https://github.com/p
 | Theme | Mode | Made for |
 | :--- | :--- | :--- |
 | Plooum Lagon | Dark | Frosted glass groups (`ha-plooum-group-card`), climate band |
+| Plooum Braise | Dark | Evenings: warm charcoal, amber and coral |
+| Plooum Boréale | Dark | The most colorful glass: violet night, sea green and magenta veils |
+| Plooum Minuit | Dark | The most sober: deep ink blue, steel halos |
 
 ### Plooum Lagon
 A dark teal and turquoise theme: soft colored halos as the background (a CSS gradient, no image to load), translucent cards, and the color of the frosted glass of the Plooum group card (`plooum-group-color`).
 
 ![Plooum Lagon preview](previews/lagon.png)
+
+### Plooum Braise
+A warm charcoal with amber and coral halos, like smouldering embers: the coziest, for the evening. Lit devices glow amber and coral.
+
+![Plooum Braise preview](previews/braise.png)
+
+### Plooum Boréale
+A violet night crossed by sea green and magenta veils, like a northern light: the most colorful, where the frosted glass looks its best. Its accent is sea green.
+
+![Plooum Boréale preview](previews/boreale.png)
+
+### Plooum Minuit
+A deep ink blue with cold steel halos: the most sober, nothing draws the eye away from the data. Its accent is sky blue.
+
+![Plooum Minuit preview](previews/minuit.png)
 
 ---
 
@@ -38,7 +56,7 @@ Copy [themes/plooum.yaml](themes/plooum.yaml) into the `themes/` folder of your 
      themes: !include_dir_merge_named themes
    ```
    After adding this line, restart Home Assistant. For later updates, the **Reload themes** action (`frontend.reload_themes`) is enough.
-2. Pick the theme in your profile (*Profile → Theme*), or on a single view with `theme: Plooum Lagon` in the view's YAML.
+2. Pick the theme in your profile (*Profile → Theme*), or on a single view with `theme: Plooum Lagon` (or any other Plooum theme) in the view's YAML.
 3. A view's own background (view settings → **Background**) is drawn over the theme's: set it to none to see the theme's halos.
 
 ## Theme variables for the Plooum cards
