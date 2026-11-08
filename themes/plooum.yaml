@@ -40,3 +40,111 @@ Plooum Lagon:
       ha-card-box-shadow: "none"
       # Glass of ha-plooum-group-card.
       plooum-group-color: "#04141a"
+
+# Plooum Braise: warm charcoal, amber and coral halos, like smouldering embers.
+Plooum Braise:
+  modes:
+    dark:
+      # Background: soft halos, no image to load.
+      lovelace-background: >-
+        fixed radial-gradient(55% 45% at 15% 15%, #854f0b 0, transparent 70%),
+        fixed radial-gradient(50% 55% at 90% 35%, #712b13 0, transparent 70%),
+        fixed radial-gradient(60% 50% at 45% 105%, #4a1b0c 0, transparent 70%),
+        #140d0a
+      primary-background-color: "#140d0a"
+      secondary-background-color: "#22160f"
+      app-header-background-color: "rgba(20, 13, 10, 0.6)"
+      app-header-text-color: "#faeeda"
+      sidebar-background-color: "#140d0a"
+      sidebar-text-color: "#faeeda"
+      sidebar-icon-color: "#f5c4b3"
+      sidebar-selected-icon-color: "#f0997b"
+      sidebar-selected-text-color: "#f0997b"
+      primary-color: "#f0997b"
+      accent-color: "#fac775"
+      primary-text-color: "#faeeda"
+      secondary-text-color: "rgba(250, 238, 218, 0.6)"
+      disabled-text-color: "rgba(250, 238, 218, 0.35)"
+      divider-color: "rgba(250, 199, 117, 0.14)"
+      state-icon-color: "#f5c4b3"
+      state-active-color: "#fac775"
+      # Cards: translucent, in the theme's color.
+      card-background-color: "#22160f"
+      ha-card-background: "rgba(26, 16, 12, 0.55)"
+      ha-card-border-radius: "20px"
+      ha-card-border-color: "rgba(250, 199, 117, 0.14)"
+      ha-card-box-shadow: "none"
+      # Glass of ha-plooum-group-card.
+      plooum-group-color: "#1a100c"
+
+# Plooum Boréale: a violet night crossed by sea green and magenta veils, like a northern light.
+Plooum Boréale:
+  modes:
+    dark:
+      # Background: soft halos, no image to load.
+      lovelace-background: >-
+        fixed radial-gradient(70% 35% at 30% 20%, #085041 0, transparent 70%),
+        fixed radial-gradient(45% 50% at 85% 25%, #3c3489 0, transparent 70%),
+        fixed radial-gradient(50% 45% at 20% 95%, #72243e 0, transparent 70%),
+        #0e0b1a
+      primary-background-color: "#0e0b1a"
+      secondary-background-color: "#18142b"
+      app-header-background-color: "rgba(14, 11, 26, 0.6)"
+      app-header-text-color: "#eeedfe"
+      sidebar-background-color: "#0e0b1a"
+      sidebar-text-color: "#eeedfe"
+      sidebar-icon-color: "#afa9ec"
+      sidebar-selected-icon-color: "#5dcaa5"
+      sidebar-selected-text-color: "#5dcaa5"
+      primary-color: "#5dcaa5"
+      accent-color: "#9fe1cb"
+      primary-text-color: "#eeedfe"
+      secondary-text-color: "rgba(238, 237, 254, 0.6)"
+      disabled-text-color: "rgba(238, 237, 254, 0.35)"
+      divider-color: "rgba(175, 169, 236, 0.14)"
+      state-icon-color: "#afa9ec"
+      state-active-color: "#9fe1cb"
+      # Cards: translucent, in the theme's color.
+      card-background-color: "#18142b"
+      ha-card-background: "rgba(16, 12, 30, 0.55)"
+      ha-card-border-radius: "20px"
+      ha-card-border-color: "rgba(175, 169, 236, 0.14)"
+      ha-card-box-shadow: "none"
+      # Glass of ha-plooum-group-card.
+      plooum-group-color: "#100c1e"
+
+# Plooum Minuit: deep ink blue with cold steel halos, the most sober.
+Plooum Minuit:
+  modes:
+    dark:
+      # Background: soft halos, no image to load.
+      lovelace-background: >-
+        fixed radial-gradient(60% 50% at 20% 10%, #0c447c 0, transparent 70%),
+        fixed radial-gradient(50% 55% at 95% 60%, #042c53 0, transparent 70%),
+        fixed radial-gradient(55% 45% at 40% 105%, #26215c 0, transparent 70%),
+        #070b14
+      primary-background-color: "#070b14"
+      secondary-background-color: "#0f1724"
+      app-header-background-color: "rgba(7, 11, 20, 0.6)"
+      app-header-text-color: "#e6f1fb"
+      sidebar-background-color: "#070b14"
+      sidebar-text-color: "#e6f1fb"
+      sidebar-icon-color: "#b5d4f4"
+      sidebar-selected-icon-color: "#85b7eb"
+      sidebar-selected-text-color: "#85b7eb"
+      primary-color: "#85b7eb"
+      accent-color: "#b5d4f4"
+      primary-text-color: "#e6f1fb"
+      secondary-text-color: "rgba(230, 241, 251, 0.6)"
+      disabled-text-color: "rgba(230, 241, 251, 0.35)"
+      divider-color: "rgba(181, 212, 244, 0.12)"
+      state-icon-color: "#b5d4f4"
+      state-active-color: "#b5d4f4"
+      # Cards: translucent, in the theme's color.
+      card-background-color: "#0f1724"
+      ha-card-background: "rgba(8, 14, 26, 0.55)"
+      ha-card-border-radius: "20px"
+      ha-card-border-color: "rgba(181, 212, 244, 0.12)"
+      ha-card-box-shadow: "none"
+      # Glass of ha-plooum-group-card.
+      plooum-group-color: "#080e1a"

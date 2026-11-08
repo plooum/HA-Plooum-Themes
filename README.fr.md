@@ -12,11 +12,29 @@ Des thèmes Home Assistant pensés pour aller avec les [HA Plooum Cards](https:/
 | Thème | Mode | Pensé pour |
 | :--- | :--- | :--- |
 | Plooum Lagon | Sombre | Groupes en verre dépoli (`ha-plooum-group-card`), bande climat |
+| Plooum Braise | Sombre | Le soir : anthracite chaud, ambre et corail |
+| Plooum Boréale | Sombre | Le verre le plus coloré : nuit violette, voiles vert d'eau et magenta |
+| Plooum Minuit | Sombre | Le plus sobre : bleu encre profond, halos acier |
 
 ### Plooum Lagon
 Un thème sombre bleu canard et turquoise : des halos de couleur doux en fond (un dégradé CSS, aucune image à charger), des cartes translucides, et la couleur du verre dépoli de la carte groupe Plooum (`plooum-group-color`).
 
 ![Aperçu de Plooum Lagon](previews/lagon.png)
+
+### Plooum Braise
+Un anthracite chaud aux halos ambre et corail, comme un feu qui couve : le plus chaleureux, pour le soir. Les appareils allumés s'éclairent en ambre et corail.
+
+![Aperçu de Plooum Braise](previews/braise.png)
+
+### Plooum Boréale
+Une nuit violette traversée de voiles vert d'eau et magenta, comme une aurore boréale : le plus coloré, celui où le verre dépoli est le plus beau. Son accent est vert d'eau.
+
+![Aperçu de Plooum Boréale](previews/boreale.png)
+
+### Plooum Minuit
+Un bleu encre profond aux halos acier froids : le plus sobre, rien ne détourne l'œil des données. Son accent est bleu ciel.
+
+![Aperçu de Plooum Minuit](previews/minuit.png)
 
 ---
 
@@ -38,7 +56,7 @@ Copie [themes/plooum.yaml](themes/plooum.yaml) dans le dossier `themes/` de ta c
      themes: !include_dir_merge_named themes
    ```
    Après l'ajout de cette ligne, redémarre Home Assistant. Pour les mises à jour suivantes, l'action **Recharger les thèmes** (`frontend.reload_themes`) suffit.
-2. Choisis le thème dans ton profil (*Profil → Thème*), ou sur une seule vue avec `theme: Plooum Lagon` dans le YAML de la vue.
+2. Choisis le thème dans ton profil (*Profil → Thème*), ou sur une seule vue avec `theme: Plooum Lagon` (ou tout autre thème Plooum) dans le YAML de la vue.
 3. Le fond propre d'une vue (paramètres de la vue → **Arrière-plan**) passe par-dessus celui du thème : mets-le à « aucun » pour voir les halos du thème.
 
 ## Variables de thème pour les cartes Plooum
